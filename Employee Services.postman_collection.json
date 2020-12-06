@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "8f72f20d-f9fe-4f37-bec6-cab9a1167acb",
+		"name": "Employee Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2MDczMDAxMjMsImlhdCI6MTYwNzI4MjEyM30.NOYis9iz6_7y1nrTE7jr30z35AhMymNGgOdtOi9luYF6HJXUHkXNccz7JteNtMo0YEx_rKxHXWFdhO5D3GvzdA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"javainuse\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/employees/getEmployee/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2MDczMDEzOTAsImlhdCI6MTYwNzI4MzM5MH0.4qvFpk4zn0CFjCDK3YUUnhnzBdFDe5ivWh2lUZgKE0Kse_NkzFVdWYKM3YMaukcE73dAIEN0CBUMYy-mAdYvaQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/getEmployee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"getEmployee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/employees/addNewEmployee/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2MDczMDIwNjMsImlhdCI6MTYwNzI4NDA2M30.4cWL0g8thGJgaEWi1U9XH74rfqcoxToNdpUa7UMq9cmIb86GzpheScf4JTUQe0mZKzhd8P0yoLURwfWTDzv7eg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seq_id\":1,\r\n    \"emp_name\":\"Kevin\",\r\n    \"salary\":49999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/addNewEmployee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"addNewEmployee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/employees/updateEmployee/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2MDczMDIwNjMsImlhdCI6MTYwNzI4NDA2M30.4cWL0g8thGJgaEWi1U9XH74rfqcoxToNdpUa7UMq9cmIb86GzpheScf4JTUQe0mZKzhd8P0yoLURwfWTDzv7eg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"seq_id\": 1,\r\n        \"emp_id\": \"202012080001\",\r\n        \"emp_name\": \"Kevin\",\r\n        \"salary\": 50001,\r\n        \"member_type\": \"Gold\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/updateEmployee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"updateEmployee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/employees/deleteEmploy/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2MDczMDIwNjMsImlhdCI6MTYwNzI4NDA2M30.4cWL0g8thGJgaEWi1U9XH74rfqcoxToNdpUa7UMq9cmIb86GzpheScf4JTUQe0mZKzhd8P0yoLURwfWTDzv7eg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/deleteEmploy/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"deleteEmploy",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
