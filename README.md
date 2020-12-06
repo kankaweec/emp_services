@@ -12,7 +12,7 @@ I provide 6 service below
 
 3. [GET] /api/employees/{emp_id} (Find employee by id) 
 
-4. [POST] /api/employees/addNewEmployee (Register new employees by id)
+4. [POST] /api/employees/addNewEmployee (Register new employees)
 
 5. [PUT] /api/employees/updateEmployee (Update employees by id) 
 
