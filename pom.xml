@@ -8,7 +8,7 @@
 		<version>2.3.0.M1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.javatpoint</groupId>
+	<groupId>com.th.employee</groupId>
 	<artifactId>spring-boot-emp-services</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-emp-services</name>
@@ -72,6 +72,16 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
 		</dependency>
 	</dependencies>
 
