@@ -22,4 +22,4 @@ I provide 6 service below
 
 you run the application with mvn spring-boot:run command in Terminal, the Spring Boot application will get started in port 8080
 
-and I have a JSON file for import to POSTMAN and call services
+and I have a JSON file (Employee Services.postman_collection.json) for import to POSTMAN and call services
